@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Course Outline for 3-day short course on Virtualization, Big Data and Cloud</title>
+<!-- 2016-12-14 Wed 19:22 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Saurabh Barjatiya" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Course Outline for 3-day short course on Virtualization, Big Data and Cloud</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Introduction</a></li>
+<li><a href="#sec-2">2. Pre-requisites</a></li>
+<li><a href="#sec-3">3. Virtualization</a>
+<ul>
+<li><a href="#sec-3-1">3.1. What is hypervisor</a></li>
+<li><a href="#sec-3-2">3.2. Type I vs Type II Virtualization</a></li>
+<li><a href="#sec-3-3">3.3. Para-virtualization and guest additions</a></li>
+<li><a href="#sec-3-4">3.4. VMs</a>
+<ul>
+<li><a href="#sec-3-4-1">3.4.1. KVM</a></li>
+<li><a href="#sec-3-4-2">3.4.2. Virtual-Box</a></li>
+<li><a href="#sec-3-4-3">3.4.3. Hyper-V</a></li>
+<li><a href="#sec-3-4-4">3.4.4. VMWare workstation player</a></li>
+<li><a href="#sec-3-4-5">3.4.5. VMWare vSphere</a></li>
+</ul>
+</li>
+<li><a href="#sec-3-5">3.5. Containers</a>
+<ul>
+<li><a href="#sec-3-5-1">3.5.1. OpenVZ</a></li>
+<li><a href="#sec-3-5-2">3.5.2. lxc</a></li>
+<li><a href="#sec-3-5-3">3.5.3. Docker</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Cloud</a>
+<ul>
+<li><a href="#sec-4-1">4.1. Defining cloud</a></li>
+<li><a href="#sec-4-2">4.2. Properties of cloud</a></li>
+<li><a href="#sec-4-3">4.3. Public cloud services</a>
+<ul>
+<li><a href="#sec-4-3-1">4.3.1. Amazon Web Services (AWS)</a></li>
+<li><a href="#sec-4-3-2">4.3.2. Azure</a></li>
+<li><a href="#sec-4-3-3">4.3.3. Rackspace</a></li>
+<li><a href="#sec-4-3-4">4.3.4. Google Cloud</a></li>
+</ul>
+</li>
+<li><a href="#sec-4-4">4.4. Private Cloud Software</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Configuration Management Systems - Ansible</a></li>
+<li><a href="#sec-6">6. Cloud Systems Security - Principles and practices.</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This document contains brief reference notes for a hands-on
+introduction to Virtualization, Network security, Cloud computing
+and Big Data.  To keep most of the sessions hands-on the theory is
+kept to minimum and mostly referred by links.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Pre-requisites</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+In order to use the material easily without facing difficulty
+following pre-requisites will help:
+</p>
+<ol class="org-ol">
+<li>CentOS 6.8 64-bit on base machine with everything on DVD installed
+except all language packs.  Only default English language pack is
+required.
+</li>
+<li>CentOS 7.0 64-bit ISO on all base machine
+</li>
+<li>Virtual-Box latest version 64-bit on base machine
+</li>
+<li>Base machine BIOS configuration to enable virtualization.  CPU
+should support vmx (Intel) or corresponding AMD based Type I
+virtualization.
+</li>
+<li>A working AWS account is preferred.  It would be good to have a
+working Azure account as well.  Both have free-tier and charge
+only 2 Rs. (at time of writing) for creating a new account.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Virtualization</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> What is hypervisor</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Hypervisor">https://en.wikipedia.org/wiki/Hypervisor</a>
+</li>
+<li>Software that performs bulk of virtualization.
+</li>
+<li>Host/Guest; Base/VM
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Type I vs Type II Virtualization</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Hypervisor#Classification">https://en.wikipedia.org/wiki/Hypervisor#Classification</a>
+</li>
+<li id="Type I">Type I hypervisor properties:
+<ul class="org-ul">
+<li>Bare Metal
+</li>
+<li>CPU and OS are capable of giving resources to VMs directly
+</li>
+<li>Domain 0/Domain U
+</li>
+<li>VMWare ESX, Hyper-V, KVM
+</li>
+<li>CPU support check   
+</li>
+<li>BIOS configuration required.
+</li>
+</ul>
+</li>
+<li id="Type II">Type II hypervisor properties:
+<ul class="org-ul">
+<li>Hardware is emulated and binary translation for privileged
+instructions
+</li>
+<li>Virtual-Box, VMWare Player
+</li>
+<li>Typically only 32-bit guests are supported even on 64-bit host
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Para-virtualization and guest additions</h3>
+<div class="outline-text-3" id="text-3-3">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Paravirtualization">https://en.wikipedia.org/wiki/Paravirtualization</a>
+</li>
+<li id="Para-virtualization">Both host and guest OS are modified such
+that it is clear that they are virtualized.  Further the two
+are modified to work well with each other.
+<ul class="org-ul">
+<li>Xen supports both Para-virtualization and HVM.  Xen was
+default hypervisor for CentOS 5.x.  From CentOS 6.x KVM has
+become default.
+</li>
+</ul>
+</li>
+<li id="Guest additions">Drivers that work well with virtualized
+hardware as many checks/balances that are necessary for
+physical hardware (Eg checking temperature) is not required
+with virtual hardware.
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> VMs</h3>
+<div class="outline-text-3" id="text-3-4">
+</div><div id="outline-container-sec-3-4-1" class="outline-4">
+<h4 id="sec-3-4-1"><span class="section-number-4">3.4.1</span> KVM</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+Hands on session:
+</p>
+<ol class="org-ol">
+<li>Create Basic CentOS 7 VM with OS.  Keep VM for later lxc and
+docker experiments.
+</li>
+<li>Create software bridge by creating interface configuration files
+</li>
+<li>Create VM on normal network
+</li>
+<li>Add storage to VM.  A small discussion on software raid, LVM,
+etc.
+</li>
+<li>Introduction to libvirt
+</li>
+<li>Start, stop, define, edit vm using virsh
+</li>
+<li>VM Snapshots
+</li>
+<li>Cloning or renaming VM with snapshots
+</li>
+<li>Live migration of VM (<code>virt-manager</code>)
+</li>
+<li>Creating host-only, NAT, etc. networks with libvirt/virsh
+</li>
+<li>Log off and see that VMs are still running.  Type I / Server virtualization.
+</li>
+</ol>
+
+<p>
+Refer:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Creating_bridge_interfaces_(br0)_for_virtual_hosts_to_use_shared_interface">https://www.sbarjatiya.com/notes_wiki/index.php/Creating_bridge_interfaces_(br0)_for_virtual_hosts_to_use_shared_interface</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Basic_libvirt_usage">https://www.sbarjatiya.com/notes_wiki/index.php/Basic_libvirt_usage</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Creating_KVM_VM_with_qcow2_disk_format_for_supporting_snapshots">https://www.sbarjatiya.com/notes_wiki/index.php/Creating_KVM_VM_with_qcow2_disk_format_for_supporting_snapshots</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Migrating_Xen_Hardware_based_Virtual_Machines_(Hvm)">https://www.sbarjatiya.com/notes_wiki/index.php/Migrating_Xen_Hardware_based_Virtual_Machines_(Hvm)</a>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4-2" class="outline-4">
+<h4 id="sec-3-4-2"><span class="section-number-4">3.4.2</span> Virtual-Box</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<ol class="org-ol">
+<li>Create VM with Virtual-Box
+</li>
+<li>Look at grapical options of setting VM configuration including
+ability to take snapshots using GUI
+</li>
+<li>Log off and see that VMs need to stopped/paused.  Type II /
+Desktop virtualization.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4-3" class="outline-4">
+<h4 id="sec-3-4-3"><span class="section-number-4">3.4.3</span> Hyper-V</h4>
+<div class="outline-text-4" id="text-3-4-3">
+<p>
+Microsoft gives its server OS for trial for 180 days.  We can
+download Windows Server 2016 and try hyper-V.  It has GUI
+interface and many features quite close to VMWare vSphere.
+</p>
+
+<p>
+Refer
+<a href="https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server">https://technet.microsoft.com/en-us/windows-server-docs/compute/hyper-v/hyper-v-on-windows-server</a>
+for resources on Hyper-V
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4-4" class="outline-4">
+<h4 id="sec-3-4-4"><span class="section-number-4">3.4.4</span> VMWare workstation player</h4>
+<div class="outline-text-4" id="text-3-4-4">
+<p>
+This is a free version for students and academia to try.  For
+commercial purposes even this needs to be purchased.  More
+features are available in VMWare Workstation Pro.  
+</p>
+
+<p>
+Refer <a href="http://www.vmware.com/products/workstation.html">http://www.vmware.com/products/workstation.html</a> for
+comparison between player and workstation pro.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-4-5" class="outline-4">
+<h4 id="sec-3-4-5"><span class="section-number-4">3.4.5</span> VMWare vSphere</h4>
+<div class="outline-text-4" id="text-3-4-5">
+<p>
+VMWare vSphere can be installed on multiple machines.  These
+machines are then added to a vCenter.  There is VMWare VSAN which
+allows converting storage from multiple physical servers to a
+SAN. There is VMWare NSX which allows use of existing network to
+build a virtualized network layer on top.  Finally there is VMWare
+Horizon for VDI. 
+</p>
+
+<p>
+Most of these products can be tried using hands-on lab using
+following steps:
+</p>
+<ol class="org-ol">
+<li>Open <a href="http://www.vmware.com/in.html">http://www.vmware.com/in.html</a>
+</li>
+<li>Select a product that you want to explore.  For example,
+"Virtual SAN or vSAN".  Choose "Try Online Now" option to
+explore the product.
+</li>
+</ol>
+
+<p>
+We are not doing this as part of hands-on session as these suite
+of products is fairly vast.  The products will require dedicated
+hardware from the hardware compatibility list located at
+<a href="http://www.vmware.com/resources/compatibility/search.php">http://www.vmware.com/resources/compatibility/search.php</a>
+Further, it will require considerable time to understand each
+product properly.  Hence, in interest of time we are omitting
+detailed discussion on these products.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5" class="outline-3">
+<h3 id="sec-3-5"><span class="section-number-3">3.5</span> Containers</h3>
+<div class="outline-text-3" id="text-3-5">
+<ul class="org-ul">
+<li>Shared kernel between host and guest.  The guest only has its own
+directory structure based on chroot of a host OS folder.  
+</li>
+<li>Host kernel maintains separate process tree, file system handles,
+network stack, etc. for guest to provide isolation. 
+</li>
+<li>Near host performance as there is no virtualization overhead.
+</li>
+<li>Unused resources are shared.  
+</li>
+<li>Resources can be adjusted live without down-time.
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-3-5-1" class="outline-4">
+<h4 id="sec-3-5-1"><span class="section-number-4">3.5.1</span> OpenVZ</h4>
+<div class="outline-text-4" id="text-3-5-1">
+<ol class="org-ol">
+<li>Install OpenVZ kernel
+</li>
+<li>Create few OpenVZ containers and setup test web servers with &#x2013;ipadd.
+</li>
+<li>Create OpenVZ containers with &#x2013;netif<sub>add</sub> and software bridge
+</li>
+<li>Set RAM, Disk, etc. for containers on the fly.
+</li>
+<li>Live migration of OpenVZ containers.  Unique CTID.  
+</li>
+</ol>
+
+<p>
+Refer: <a href="https://www.sbarjatiya.com/notes_wiki/index.php/OpenvZ">https://www.sbarjatiya.com/notes_wiki/index.php/OpenvZ</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5-2" class="outline-4">
+<h4 id="sec-3-5-2"><span class="section-number-4">3.5.2</span> lxc</h4>
+<div class="outline-text-4" id="text-3-5-2">
+<ol class="org-ol">
+<li>Install lxc userspace tools
+</li>
+<li>Create a lxc containers using OpenVZ container template
+</li>
+<li>SSH to the created lxc container
+</li>
+</ol>
+
+<p>
+Refer: <a href="https://www.sbarjatiya.com/notes_wiki/index.php/Setting_up_basic_lxc_application_or_OS_container_in_Cent-OS_6.3">https://www.sbarjatiya.com/notes_wiki/index.php/Setting_up_basic_lxc_application_or_OS_container_in_Cent-OS_6.3</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-5-3" class="outline-4">
+<h4 id="sec-3-5-3"><span class="section-number-4">3.5.3</span> Docker</h4>
+<div class="outline-text-4" id="text-3-5-3">
+<ol class="org-ol">
+<li>Install docker on CentOS 7.0 VM created on top of KVM
+</li>
+<li>Run hello world docker image
+</li>
+<li>Run bash on top of docker
+</li>
+</ol>
+
+<p>
+Refer: <a href="https://www.sbarjatiya.com/notes_wiki/index.php/Docker">https://www.sbarjatiya.com/notes_wiki/index.php/Docker</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Cloud</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Defining cloud</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>What is network
+<a href="https://simple.wikipedia.org/wiki/Computer_network">https://simple.wikipedia.org/wiki/Computer_network</a>
+</li>
+<li>What is distributed computing
+<a href="https://en.wikipedia.org/wiki/Distributed_computing">https://en.wikipedia.org/wiki/Distributed_computing</a>
+</li>
+<li>What is grid
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Grid_computing">https://en.wikipedia.org/wiki/Grid_computing</a>
+</li>
+</ul>
+</li>
+<li>What is cluster or HPC
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Computer_cluster">https://en.wikipedia.org/wiki/Computer_cluster</a>
+</li>
+</ul>
+</li>
+<li>What is cloud
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Cloud_computing">https://en.wikipedia.org/wiki/Cloud_computing</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Properties of cloud</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>Types of cloud
+<ul class="org-ul">
+<li>IAAS, PAAS, SAAS
+</li>
+<li>Public, Private, Hybrid
+</li>
+</ul>
+</li>
+<li>Pay per use in case of public cloud
+</li>
+<li>Self provisioning 
+</li>
+<li>Easily scale by adding hardware resources to common pool
+</li>
+<li>Support DCs spread across large distances
+</li>
+<li>Metering  
+</li>
+<li>APIs.  
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Public cloud services</h3>
+<div class="outline-text-3" id="text-4-3">
+</div><div id="outline-container-sec-4-3-1" class="outline-4">
+<h4 id="sec-4-3-1"><span class="section-number-4">4.3.1</span> Amazon Web Services (AWS)</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<dl class="org-dl">
+<dt> Creation of account </dt><dd>Debit card, phone verification, email ID,
+billing alerts.
+<ul class="org-ul">
+<li><a href="http://aws.amazon.com/">http://aws.amazon.com/</a>  Sign Up
+</li>
+</ul>
+</dd>
+<dt> Amazon pricing </dt><dd>Free tier and pricing 
+<ul class="org-ul">
+<li><a href="https://aws.amazon.com/free/">https://aws.amazon.com/free/</a>
+</li>
+<li><a href="https://aws.amazon.com/ec2/pricing/">https://aws.amazon.com/ec2/pricing/</a>
+</li>
+</ul>
+</dd>
+<dt> EC2 </dt><dd><ol class="org-ol">
+<li>Log into console
+</li>
+<li>Create a VM from Market place
+</li>
+<li>Configure its security group
+</li>
+<li>Key pairs
+</li>
+<li>Allocate and associate an elastic IP.  <b>Unused elastic IPs
+cost</b>.
+</li>
+<li>Create additional volumes
+</li>
+</ol>
+<p>
+Related discussions:
+</p>
+<ol class="org-ol">
+<li>Snapshots and AMIs
+</li>
+<li>Limits
+</li>
+<li>Load balancer
+</li>
+<li>Auto scaling
+</li>
+</ol>
+</dd>
+</dl>
+
+<p>
+After visiting <a href="https://aws.amazon.com/">https://aws.amazon.com/</a>  Use Menu -&gt; Products to
+explore individual products.  Quick introduction of some popular
+ones is
+</p>
+<dl class="org-dl">
+<dt> EC2 container service </dt><dd>Create VMs and run docker on it.
+Docker containers running on these VMs can be managed via EC2
+container service in a very scalable way.  Considerable
+management which would otherwise be manual is automated.
+</dd>
+<dt> EC2 container registry </dt><dd>Similar to AMI for docker.  Allows
+storing images and searching them.  
+</dd>
+<dt> Amazon VPC </dt><dd>Gives considerable flexibility with IPs, networks,
+etc. even for VMs hosted in cloud.  For VPC
+subnets we can have different VPC security group.
+Further, gateway, DHCP, DNS, etc. can be
+configured.
+</dd>
+<dt> Amazon Elastic Beanstalk </dt><dd>PAAS for Java, .Net, PHP, Python,
+Ruby, Go etc. on top of Apache, Nginx, IIS, etc.
+</dd>
+<dt> Amazon Lambda </dt><dd>Upload coad.  Run it when needed.  Pay only for
+compute resources used.
+</dd>
+<dt> Amazon S3 </dt><dd>Key/Value based store.  Create buckets.  Inside
+buckets store values for keys.  
+</dd>
+<dt> Amazon Glacier </dt><dd>For backups to keep them for long duration at
+very low cost
+</dd>
+<dt> Amazon RDS </dt><dd>Managed relational database service from Amazon.
+</dd>
+<dt> Amazon Cloud Front </dt><dd>Content Delivery Network (CDN) service
+</dd>
+<dt> Amazon Route 53 </dt><dd>DNS service
+</dd>
+<dt> Amazon Cloud Watch </dt><dd>Alarms and alerts
+</dd>
+<dt> Amazon IAM </dt><dd>Identity and access management
+</dd>
+<dt> Amazon EMR </dt><dd>Managed Hadoop, Hive, HBase, etc. cluster
+</dd>
+</dl>
+
+<p>
+AWS CLI can be used to manage resources from shell.  Refer:
+</p>
+<ul class="org-ul">
+<li>      <a href="https://www.sbarjatiya.com/notes_wiki/index.php/Installing_AWS_command-line_tools">https://www.sbarjatiya.com/notes_wiki/index.php/Installing_AWS_command-line_tools</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Using_AWS_command-line_tools_for_EC2_VM_creation">https://www.sbarjatiya.com/notes_wiki/index.php/Using_AWS_command-line_tools_for_EC2_VM_creation</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-4-3-2" class="outline-4">
+<h4 id="sec-4-3-2"><span class="section-number-4">4.3.2</span> Azure</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<p>
+Demo of basic creation of VM in a resource group and configuration of
+corresponding network security group.  <a href="http://portal.azure.com/">http://portal.azure.com/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3-3" class="outline-4">
+<h4 id="sec-4-3-3"><span class="section-number-4">4.3.3</span> Rackspace</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<p>
+A quick demo <a href="http://mycloud.rackspace.com/">http://mycloud.rackspace.com/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-4-3-4" class="outline-4">
+<h4 id="sec-4-3-4"><span class="section-number-4">4.3.4</span> Google Cloud</h4>
+<div class="outline-text-4" id="text-4-3-4">
+<p>
+It started with App Engine but now has cloud features such as VMs,
+SQL storages.  App Engine PAAS is still present.  
+Refer:
+</p>
+<ul class="org-ul">
+<li><a href="https://cloud.google.com/appengine/">https://cloud.google.com/appengine/</a>
+</li>
+<li><a href="https://cloud.google.com/appengine/docs">https://cloud.google.com/appengine/docs</a>
+</li>
+<li>TODO <a href="https://cloud.google.com/appengine/docs/php/quickstart">https://cloud.google.com/appengine/docs/php/quickstart</a>
+</li>
+</ul>
+</div>
+
+<ol class="org-ol"><li><a id="sec-4-3-4-1" name="sec-4-3-4-1"></a>Use google app engine for a PHP application<br  /><div class="outline-text-5" id="text-4-3-4-1">
+<p>
+TODO: Not completed
+</p>
+
+<p>
+Steps:
+</p>
+<ol class="org-ol">
+<li>Install google-cloud-sdk repo file:
+<pre class="example">
+[google-cloud-sdk]
+name=Google Cloud SDK
+baseurl=https://packages.cloud.google.com/yum/repos/cloud-sdk-el7-x86_64
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
+    https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+</pre>
+</li>
+<li>yum install google-cloud-sdk
+</li>
+<li>gcloud init
+</li>
+<li>Client libraries are located at
+<a href="https://cloud.google.com/sdk/cloud-client-libraries">https://cloud.google.com/sdk/cloud-client-libraries</a>
+</li>
+<li></li>
+</ol>
+</div>
+</li></ol>
+</div>
+</div>
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Private Cloud Software</h3>
+<div class="outline-text-3" id="text-4-4">
+<dl class="org-dl">
+<dt> OpenStack </dt><dd>It has gained most popularity compared to other
+alternatives.  The software is developed
+democratically hence it has many components that
+work together.
+<dl class="org-dl">
+<dt> Personal opinion </dt><dd>It takes some time to get used to OpenStack
+administration and setup. There is a steep learning curve.
+Further, many advanced features that come with it may not be
+needed for all organizations.  If simple auto-provisioning,
+ability to create VMs, simple networking, etc. is required
+then Cloudstack seems like a better choice to explore
+clouds.  If cloudstack features seem limited then it makes
+sense to go for OpenStack with additional features and
+associated complexity.
+</dd>
+</dl>
+</dd>
+
+<dt> CloudStack </dt><dd>This is the simplest cloud to setup among many
+cloud software tried by me and my peers.  It has
+all the basic options related to creation of VMs,
+migrating VMs, taking maintenance of base machines,
+etc.  It has a web front-end with a MySQL backend.
+So making this highly available is easier.
+Further, the VMs are visible on base machines and
+can be managed by virsh directly in case cloudstack
+layer fails (not reported by anyone so far). 
+<dl class="org-dl">
+<dt> Apache cloudstack setup </dt><dd><a href="http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/4.8/qig.html">http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/4.8/qig.html</a>
+</dd>
+<dt> Apache cloudstack agent setup </dt><dd><a href="http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/4.8/qig.html">http://docs.cloudstack.apache.org/projects/cloudstack-installation/en/4.8/qig.html</a>
+</dd>
+<dt> Apache cloudstack import ISO/template </dt><dd>Connection refused error resolution
+</dd>
+</dl>
+</dd>
+</dl>
+<p>
+<a href="https://cwiki.apache.org/confluence/display/CLOUDSTACK/SSVM,+templates,+Secondary+storage+troubleshooting">https://cwiki.apache.org/confluence/display/CLOUDSTACK/SSVM,+templates,+Secondary+storage+troubleshooting</a>
+</p>
+
+<dl class="org-dl">
+<dt> Others </dt><dd>Apart from OpenStack and CloudStack, there are:
+<ul class="org-ul">
+<li>Eucalyptus
+</li>
+<li>oVirt
+</li>
+<li>Open Nebula
+</li>
+</ul>
+<p>
+etc. cloud software. which are either less famous or
+more complex and hence are not that mainstream yet.
+</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Configuration Management Systems - Ansible</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+We can use ansible to manage a group of machines.  We have used
+ansible to setup the lab machines with necessary software and files
+for this workshop.  
+</p>
+
+<p>
+Tasks:
+</p>
+<ol class="org-ol">
+<li>Install ansible
+</li>
+<li>Use some ansible modules directly from command line
+</li>
+<li>Understand ansible playbooks
+</li>
+<li>A brief description of ansible roles.  Convert a playbook to role
+in case time permits.
+</li>
+</ol>
+
+<p>
+Refer:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Ansible">https://www.sbarjatiya.com/notes_wiki/index.php/Ansible</a>
+</li>
+<li><a href="http://docs.ansible.com/ansible/list_of_all_modules.html">http://docs.ansible.com/ansible/list_of_all_modules.html</a>
+</li>
+</ul>
+
+<p>
+Commands:
+</p>
+<pre class="example">
+#Create hosts file with IPs
+cat hosts | xargs -I {} sshpass -p bda2016 ssh -o StrictHostKeyChecking=no root@{} ls
+cat hosts | xargs -I {} sshpass -p bda2016 ssh-copy-id root@{}
+ansible-playbook -i hosts -f 100 setup-lab-machines.yaml
+watch ps -C ansible-playbook | cut -b 1-7 | xargs -I {} renice -n 20 -p {}
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Cloud Systems Security - Principles and practices.</h2>
+<div class="outline-text-2" id="text-6">
+<ol class="org-ol">
+<li>Quick tips for securing EC2 instance
+<ul class="org-ul">
+<li><a href="https://aws.amazon.com/articles/1233">https://aws.amazon.com/articles/1233</a>
+</li>
+</ul>
+</li>
+<li>Discussion on hosts firewall iptables and firewalld
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Iptables_configuration">https://www.sbarjatiya.com/notes_wiki/index.php/Iptables_configuration</a>
+</li>
+</ul>
+</li>
+<li>Discussion on security groups on Amazon for VM and for VPC.
+</li>
+<li>Network anti-virus
+</li>
+<li>Network anti-spam
+</li>
+<li>Intrusion prevention systems
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Snort_configuration">https://www.sbarjatiya.com/notes_wiki/index.php/Snort_configuration</a>
+</li>
+</ul>
+</li>
+<li>Next Generation firewalls or security appliances
+</li>
+<li>SSH and ssh fingerprint.  Passphrase for SSH-keys.  Tunneling via
+SSH. 
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/OpenSSH_server_configuration">https://www.sbarjatiya.com/notes_wiki/index.php/OpenSSH_server_configuration</a>
+</li>
+</ul>
+</li>
+<li>Self-signed certificates.  Discussion on public-key
+cryptography.  
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Easy-rsa">https://www.sbarjatiya.com/notes_wiki/index.php/Easy-rsa</a>
+</li>
+<li><a href="https://opsec.eu/src/tinyca/">https://opsec.eu/src/tinyca/</a>
+</li>
+</ul>
+</li>
+<li>Encrypting files 
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Gpg">https://www.sbarjatiya.com/notes_wiki/index.php/Gpg</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Encryption_with_vim">https://www.sbarjatiya.com/notes_wiki/index.php/Encryption_with_vim</a>
+</li>
+</ul>
+</li>
+<li>Encrypting folders 
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Ecryptfs">https://www.sbarjatiya.com/notes_wiki/index.php/Ecryptfs</a>
+</li>
+</ul>
+</li>
+<li>File based intrusion detection systems
+<ul class="org-ul">
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/AIDE_configuration">https://www.sbarjatiya.com/notes_wiki/index.php/AIDE_configuration</a>
+</li>
+<li><a href="https://www.sbarjatiya.com/notes_wiki/index.php/Tripwire_configuration">https://www.sbarjatiya.com/notes_wiki/index.php/Tripwire_configuration</a>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-12-08 Thu&gt;</span></span></p>
+<p class="author">Author: Saurabh Barjatiya</p>
+<p class="date">Created: 2016-12-14 Wed 19:22</p>
+<p class="creator">Emacs 24.4.1 (Org mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
